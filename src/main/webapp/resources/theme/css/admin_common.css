@@ -1,0 +1,47 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 21, 2017, 9:00:17 PM
+    Author     : thanhhai
+*/
+
+.title{
+    text-align: center;
+}
+.title h2{
+    color: #fe4c50;
+}
+
+.btn-add{
+    background: #fe4c50;
+    border: none;
+}
+tr th{
+    text-align: center;
+}
+.vertical-menu{
+/*    position: fixed;
+    z-index: 20;*/
+}
+
+.vertical-menu a {
+    background-color: #fe4c50; /* Grey background color */
+    color: white; /* Black text color */
+    display: block; /* Make the links appear below each other */
+    padding: 20px 30px; /* Add some padding */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 17px;
+}
+
+.vertical-menu a:hover {
+    background-color: #ccc; /* Dark grey background on mouse-over */
+    font-weight: bold;
+}
+
+.vertical-menu a.active {
+    background-color: #4CAF50; /* Add a green color to the "active/current" link */
+    color: white;
+}

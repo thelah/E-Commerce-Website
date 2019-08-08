@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE tiles-definitions PUBLIC  
+      "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+      "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">  
+
+<tiles-definitions>  
+ 
+   <!-- Base Define -->
+   <definition name="base.definition" 
+       template="/WEB-INF/jsp/layouts/layout.jsp">  
+       <put-attribute name="title" value="" />  
+       <put-attribute name="header" value="/WEB-INF/jsp/basefragments/_header.jsp" />  
+       <put-attribute name="menu" value="/WEB-INF/jsp/basefragments/_menu.jsp" />  
+       <put-attribute name="body" value="" />  
+       <put-attribute name="footer" value="/WEB-INF/jsp/basefragments/_footer.jsp" />  
+   </definition>  
+   
+   <!-- Base 2 Define -->
+   <definition name="base2.definition" 
+       template="/WEB-INF/jsp/layouts/layout_admin.jsp">  
+       <put-attribute name="title" value="" />  
+       <put-attribute name="header" value="/WEB-INF/jsp/basefragments/_adminHeader.jsp" />  
+       <put-attribute name="menu" value="/WEB-INF/jsp/basefragments/_adminMenu.jsp" />  
+       <put-attribute name="body" value="" />  
+       <put-attribute name="footer" value="/WEB-INF/jsp/basefragments/_footer.jsp" />  
+   </definition> 
+   
+   <!-- Base 3 Define -->
+   <definition name="base3.definition" 
+       template="/WEB-INF/jsp/layouts/layout.jsp">  
+       <put-attribute name="title" value="" /> 
+       <put-attribute name="header" value="/WEB-INF/jsp/basefragments/_adminHeader.jsp" />  
+       <put-attribute name="menu" value="/WEB-INF/jsp/basefragments/_menu.jsp" />  
+       <put-attribute name="body" value="" />  
+       <put-attribute name="footer" value="/WEB-INF/jsp/basefragments/_footer.jsp" />  
+   </definition>  
+   
+   <!-- Base 4 Define -->
+   <definition name="base4.definition" 
+       template="/WEB-INF/jsp/layouts/layout_course.jsp">  
+       <put-attribute name="title" value="" />  
+       <put-attribute name="header" value="/WEB-INF/jsp/basefragments/_header.jsp" />  
+       <put-attribute name="menu" value="/WEB-INF/jsp/basefragments/_userMenu.jsp" />  
+       <put-attribute name="body" value="" />  
+       <put-attribute name="footer" value="/WEB-INF/jsp/basefragments/_footer.jsp" />  
+   </definition>
+ 
+   <!-- Home Page -->
+   <definition name="homePage" extends="base.definition">  
+       <put-attribute name="title" value="Home Page" />  
+       <put-attribute name="body" value="/WEB-INF/jsp/bodyfragments/_home.jsp" />  
+   </definition>  
+   
+   <!-- Cources Page -->
+   <definition name="coursePage" extends="base4.definition">  
+       <put-attribute name="title" value="Home Page" />  
+       <put-attribute name="body" value="/WEB-INF/jsp/bodyfragments/_course.jsp" />  
+   </definition> 
+   
+   <!-- Register Page -->
+   <definition name="registerPage" extends="base.definition">  
+       <put-attribute name="title" value="Register" />  
+       <put-attribute name="body" value="/WEB-INF/jsp/bodyfragments/_register.jsp" />  
+   </definition> 
+   
+    
+   <!-- Login Page -->
+   <definition name="loginPage" extends="base.definition">   
+       <put-attribute name="body" value="/WEB-INF/jsp/bodyfragments/_login.jsp" />  
+   </definition>
+   
+   <!-- Login Error Page -->
+   <definition name="loginErrorPage" extends="base.definition">   
+       <put-attribute name="body" value="/WEB-INF/jsp/bodyfragments/_loginError.jsp" />  
+   </definition>
+   
+   <!-- User Page -->
+   <definition name="userPage" extends="base3.definition">   
+       <put-attribute name="body" value="/WEB-INF/jsp/bodyfragments/_userHome.jsp" />  
+   </definition>
+   
+   <!-- Register successful Page -->
+   <definition name="registerSuccessfulPage" extends="base.definition">   
+       <put-attribute name="body" value="/WEB-INF/jsp/bodyfragments/_registerSuccessful.jsp" />  
+   </definition>
+   
+   <!-- Update successful Page -->
+   <definition name="updateSuccessfulPage" extends="base3.definition">   
+       <put-attribute name="body" value="/WEB-INF/jsp/bodyfragments/_updateSuccessful.jsp" />  
+   </definition>
+   
+   
+   <!-- ContactUs Page -->
+   <definition name="contactusPage" extends="base.definition">  
+       <put-attribute name="title" value="Contact Us" />  
+       <put-attribute name="body" value="/WEB-INF/jsp/bodyfragments/_contactus.jsp" />  
+   </definition>
+   
+   <!-- Cart Page -->
+   <definition name="cartPage" extends="base.definition">  
+       <put-attribute name="title" value="Cart" />  
+       <put-attribute name="body" value="/WEB-INF/jsp/bodyfragments/_cart.jsp" />  
+   </definition>
+   
+   <!-- Course Detail Page -->
+   <definition name="courseDetailPage" extends="base.definition">  
+       <put-attribute name="title" value="Course Detail" />  
+       <put-attribute name="body" value="/WEB-INF/jsp/bodyfragments/_courseDetail.jsp" />  
+   </definition>
+   
+   
+<!--*********************************
+***************For Admin*************
+*************************************-->
+
+
+    <!-- Admin_Home Page -->
+   <definition name="adminHomePage" extends="base2.definition">  
+       <put-attribute name="title" value="Admin_Home" />  
+       <put-attribute name="body" value="/WEB-INF/jsp/bodyfragments/_adminHome.jsp" />  
+   </definition>
+   
+   <!--    PROMOTION BEGIN HERE-->
+   
+     <!-- Admin_Promotion Page -->
+   <definition name="adminPromotionPage" extends="base2.definition">  
+       <put-attribute name="title" value="Admin_Promotion" />  
+       <put-attribute name="body" value="/WEB-INF/jsp/bodyfragments/_adminPromotion.jsp" />  
+   </definition> 
+   
+     <!-- Add_Promotion Page -->
+   <definition name="addPromotionPage" extends="base2.definition">  
+       <put-attribute name="title" value="Admin_Promotion" />  
+       <put-attribute name="body" value="/WEB-INF/jsp/bodyfragments/_add-Promotion.jsp" />  
+   </definition>   
+   
+   
+
+<!--           ******************       -->   
+    
+<!--   ***** CATEGORY BEGIN HERE ****-->
+
+       <!-- Admin_Category Page -->
+   <definition name="adminCategoryPage" extends="base2.definition">  
+       <put-attribute name="title" value="Admin_Category" />  
+       <put-attribute name="body" value="/WEB-INF/jsp/bodyfragments/_adminCategory.jsp" />  
+   </definition>  
+   
+   <!-- Add_Category Page -->
+   <definition name="addCategoryPage" extends="base2.definition">  
+       <put-attribute name="title" value="Admin_Category" />  
+       <put-attribute name="body" value="/WEB-INF/jsp/bodyfragments/_add-Category.jsp" />  
+   </definition> 
+     
+
+<!--           ******************       -->
+    
+<!--   ***** COURSE BEGIN HERE ****-->    
+
+       <!-- Admin_Couse Page -->
+   <definition name="adminCoursePage" extends="base2.definition">  
+       <put-attribute name="title" value="Admin_Course" />  
+       <put-attribute name="body" value="/WEB-INF/jsp/bodyfragments/_adminCourse.jsp" />  
+   </definition> 
+   
+    <!-- Add_Couse Page -->
+   <definition name="addCoursePage" extends="base2.definition">  
+       <put-attribute name="title" value="Admin_Course" />  
+       <put-attribute name="body" value="/WEB-INF/jsp/bodyfragments/_add-Course.jsp" />  
+   </definition> 
+   
+
+<!--           ******************       -->
+
+<!--   ***** ACCOUNT BEGIN HERE ****-->     
+         
+    
+    <!-- Admin_Account Page -->
+   <definition name="adminAccountPage" extends="base2.definition">  
+       <put-attribute name="title" value="Admin_Account" />  
+       <put-attribute name="body" value="/WEB-INF/jsp/bodyfragments/_adminAccount.jsp" />  
+   </definition>
+   
+   <!-- Update_Account Page -->
+   <definition name="updateAccountPage" extends="base2.definition">  
+       <put-attribute name="title" value="Add_Account" />  
+       <put-attribute name="body" value="/WEB-INF/jsp/bodyfragments/_update-account.jsp" />  
+   </definition>
+   
+   
+<!--           ******************       -->
+   
+<!--   ***** IMAGE BEGIN HERE ****-->  
+    
+   <!-- Admin_Image Page -->
+   <definition name="adminImagePage" extends="base2.definition">  
+       <put-attribute name="title" value="Admin_Home" />  
+       <put-attribute name="body" value="/WEB-INF/jsp/bodyfragments/_adminImage.jsp" />  
+   </definition>
+   
+   
+   <!-- Admin_Account Page -->
+   <definition name="addImagePage" extends="base2.definition">  
+       <put-attribute name="title" value="Admin_Home" />  
+       <put-attribute name="body" value="/WEB-INF/jsp/bodyfragments/_add-Image.jsp" />  
+   </definition>
+   <!--           ******************       -->
+   
+<!--   ***** ORDER BEGIN HERE ****-->  
+   
+   <!-- Admin_Order Page -->
+   <definition name="adminOrderPage" extends="base2.definition">  
+       <put-attribute name="title" value="Admin_Home" />  
+       <put-attribute name="body" value="/WEB-INF/jsp/bodyfragments/_adminOrder.jsp" />  
+   </definition>
+   
+   
+<!--           ******************       -->
+   
+<!--   ***** ORDER DERTAIL BEGIN HERE ****-->  
+
+ <!-- Admin_OrderDetail Page -->
+   <definition name="adminOrderDetailPage" extends="base2.definition">  
+       <put-attribute name="title" value="Admin_Home" />  
+       <put-attribute name="body" value="/WEB-INF/jsp/bodyfragments/_adminOrderDetail.jsp" />  
+   </definition>
+   
+   
+   <!--           ******************       -->
+   
+<!--   ***** ORDER DERTAIL BEGIN HERE ****-->  
+
+   <!-- Admin_Transaction Page -->
+   <definition name="adminTransactionPage" extends="base2.definition">  
+       <put-attribute name="title" value="Admin_Home" />  
+       <put-attribute name="body" value="/WEB-INF/jsp/bodyfragments/_adminTransaction.jsp" />  
+   </definition>
+  
+    <!-- Add_Transaction Page -->
+   <definition name="addTransactionPage" extends="base2.definition">  
+       <put-attribute name="title" value="Admin_Home" />  
+       <put-attribute name="body" value="/WEB-INF/jsp/bodyfragments/_add-Transaction.jsp" />  
+   </definition>
+ 
+ 
+</tiles-definitions>
